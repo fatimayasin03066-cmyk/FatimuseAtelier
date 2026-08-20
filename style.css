@@ -1,0 +1,80 @@
+
+    body {
+    background-color: #faf7f2;
+    color: #2c221e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    margin: 40px 0;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #4a332d;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    color: #8c7368;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.welcome {
+    font-size: 1rem;
+    color: #6b534b;
+    font-style: italic;
+}
+
+.gallery-section {
+    margin-bottom: 45px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-section h2 {
+    font-size: 1.4rem;
+    color: #4a332d;
+    border-bottom: 1.5px solid #dcd0c0;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.grid img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(74, 51, 45, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Agar aakhri row mein 1 image ho toh usko center aur balance karne ke liye */
+.grid img:last-child:nth-child(odd) {
+    grid-column: span 2;
+    max-width: 75%;
+    height: 190px;
+    justify-self: center;
+}
+
+.grid img:active, .grid img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(74, 51, 45, 0.15);
+}
