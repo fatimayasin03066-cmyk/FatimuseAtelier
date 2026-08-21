@@ -1,0 +1,106 @@
+body {
+    background-color: #fcfbf9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-header {
+    margin-bottom: 30px;
+}
+
+.site-header h1 {
+    font-size: 2.2rem;
+    color: #4a3b32;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #7d6b60;
+    margin-bottom: 10px;
+}
+
+.quote {
+    font-style: italic;
+    color: #8c786d;
+    font-size: 0.95rem;
+}
+
+/* Folder Grid Styles */
+.folders-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.folder-card {
+    background: #ffffff;
+    border: 2px solid #e6dfdb;
+    padding: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.folder-card:hover {
+    transform: translateY(-3px);
+    background-color: #f7f4f0;
+    border-color: #c9bcb5;
+}
+
+.folder-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.folder-card h2 {
+    margin: 0 0 5px 0;
+    color: #4a3b32;
+    font-size: 1.3rem;
+}
+
+.folder-card p {
+    margin: 0;
+    color: #8c786d;
+    font-size: 0.85rem;
+}
+
+/* Back Button */
+.back-btn {
+    background: none;
+    border: 1px solid #7d6b60;
+    color: #7d6b60;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    transition: background 0.2s;
+}
+
+.back-btn:hover {
+    background: #7d6b60;
+    color: #fff;
+}
+
+/* Image Grid for Galleries */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 10px;
+}
+
+
+.image-grid img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
